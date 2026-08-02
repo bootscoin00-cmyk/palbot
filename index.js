@@ -25,7 +25,7 @@ bot.on("message", async (msg) => {
 
   try {
     const response = await ai.models.generateContent({
-      model: "ggemini-3.6-flash",
+      model: "gemini-3.6-flash",
       contents: `${SYSTEM_PROMPT}
 
 Pesan anggota grup:
