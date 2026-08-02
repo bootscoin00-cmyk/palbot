@@ -1,3 +1,12 @@
+console.log("🤖 PALBOT STARTED");
+
+bot.on("polling_error", (err) => {
+  console.log("Polling Error:", err);
+});
+
+bot.on("message", (msg) => {
+  console.log("MESSAGE RECEIVED:", msg.text);
+});
 require("dotenv").config();
 
 const TelegramBot = require("node-telegram-bot-api");
